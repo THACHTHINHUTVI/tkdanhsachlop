@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý sinh viên</title>
+    <style>
+        body { display: flex; margin: 0; font-family: sans-serif; height: 100vh; }
+        
+                .sidebar { 
+            width: 300px; background: #FF00FF;border-right: 2px solid #ccc; 
+            overflow-y: auto; padding: 10px; 
+        }
+        .sidebar h3 { color: #663399; text-align: center; }
+        .student-item { 
+            padding: 10px; margin-bottom: 5px; background: Beige; 
+            cursor: pointer; border-radius: 5px; border: 1px solid #ddd;
+            transition: 0.3s;
+        }
+        .student-item:hover { background: #e0e0e0; color: #C71585; font-weight: bold; }
+        .main-content { flex-grow: 1; padding: 0; background: #5F9EA0; }
+        iframe { width: 100%; height: 100%; border: none; }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h3>DANH SÁCH LỚP</h3>
+             <div class="student-item" onclick="loadStudent('html/110112530.html')">110125230</div>
+        
+	<div class="student-item" onclick="loadStudent('html/110124255.html')">110124255</div>
+        <div class="student-item" onclick="loadStudent('html/anh thư.html')">110125171</div>
+        <div class="student-item" onclick="loadStudent('html/anh khoa.html')">110125085</div>
+	<div class="student-item" onclick="loadStudent('html/anhtho.html')">110125167</div>
+        <div class="student-item" onclick="loadStudent('html/chí bảo.html')">110125012</div>
+        <div class="student-item" onclick="loadStudent('html/chí tường.html')">110125201</div>
+        <div class="student-item" onclick="loadStudent('html/dat.html')">110125035</div>
+	<div class="student-item" onclick="loadStudent('html/đình thụ.html')">110125273</div>
+        <div class="student-item" onclick="loadStudent('html/đức.html')">110125222</div>
+        <div class="student-item" onclick="loadStudent('html/duy.html')">110125043</div>
+        <div class="student-item" onclick="loadStudent('html/gia bảo.html')">110125016</div>
+	<div class="student-item" onclick="loadStudent('html/hạp.html')">110125052</div>
+        <div class="student-item" onclick="loadStudent('html/hoa.html')">110125056</div>
+        <div class="student-item" onclick="loadStudent('html/hoàng minh.html')">110125254</div>
+        <div class="student-item" onclick="loadStudent('html/hue minh.html')">110125104</div>
+	<div class="student-item" onclick="loadStudent('html/khang.html')">110125078</div>
+        <div class="student-item" onclick="loadStudent('html/khương.html')">110125093</div>
+        <div class="student-item" onclick="loadStudent('html/nguyễn ý.html')">110125283</div>
+        <div class="student-item" onclick="loadStudent('html/như ý.html')">110125213</div>
+	<div class="student-item" onclick="loadStudent('html/quang vinh.html')">110124215</div>
+        <div class="student-item" onclick="loadStudent('html/quangvien.html')">110125209</div>
+               <div class="student-item" onclick="loadStudent('html/quyên.html')">110125141</div>
+	<div class="student-item" onclick="loadStudent('html/tâm.html')">110125145</div>
+        <div class="student-item" onclick="loadStudent('html/thanh thúy.html')">110124198</div>
+        <div class="student-item" onclick="loadStudent('html/thảo.html')">110125157</div>
+        <div class="student-item" onclick="loadStudent('html/thiên bảo.html')">110125017</div>
+	<div class="student-item" onclick="loadStudent('html/thông tin cá nhân.html')">110125207</div>
+        <div class="student-item" onclick="loadStudent('html/thùy trang.html')">110124198</div>
+        <div class="student-item" onclick="loadStudent('html/trung minh.html')">110125253</div>
+        <div class="student-item" onclick="loadStudent('html/vien.html')">110125208</div>
+
+            </div>
+
+    <div class="main-content">
+               <iframe id="view-frame" src="about:blank"></iframe>
+    </div>
+
+    <script>
+        function loadStudent(fileName) {
+                        document.getElementById('view-frame').src = fileName;
+        }
+    </script>
+
+</body>
+</html>
